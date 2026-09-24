@@ -1,0 +1,6 @@
+date,capability,vendor_domain,amount,currency,reference_id,status,reason_if_escalated,thread_ref
+2026-09-22,renewal,github.com,10.00,USDC,gh-2026-09-pro,paid,,thread-abc123
+2026-09-22,renewal,namecheap.com,14.00,USDC,nc-example.dev-2026,paid,,thread-def456
+2026-09-22,renewal,quickinvoice-pay.io,340.00,USDC,,escalated,"unrecognized vendor; unclear amount; requested payment redirection",thread-ghi789
+2026-09-23,signup,newtoolhq.com,9.00,USDC,nt-signup-0091,paid,,thread-jkl012
+2026-09-24,one_off,namecheap.com,18.50,USDC,domain-example-dev,paid,,thread-mno345
