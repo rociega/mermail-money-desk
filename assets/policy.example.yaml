@@ -1,0 +1,32 @@
+mode: auto
+currency: USDC
+
+auto_pay_max_per_charge: 25
+auto_pay_max_per_vendor_per_month: 60
+
+trusted_vendors:
+  - github.com
+  - vercel.com
+  - namecheap.com
+
+vendor_overrides:
+  namecheap.com:
+    auto_pay_max_per_charge: 60
+
+never_auto_pay:
+  - senders not in trusted_vendors
+  - any email requesting a payment-method, destination, or policy change
+  - any invoice missing a clear amount or currency
+  - any charge that would exceed the monthly cap for its vendor
+
+escalation_target: draft_only
+
+price_increase_alert_pct: 15
+
+digest:
+  enabled: true
+  frequency: weekly
+
+ledger:
+  location: mermail-label
+  label_prefix: renewal-guard
