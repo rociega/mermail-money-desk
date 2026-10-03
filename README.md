@@ -72,6 +72,9 @@ No PayBox transfer has been attempted or confirmed. PayBox reported that no
 agent signer was recorded, so signing and final settlement remain unverified.
 This package does not claim a completed payment.
 
+See [`DEMO_EVIDENCE.md`](DEMO_EVIDENCE.md) for the redacted tool checklist,
+policy, and exact dry-run result.
+
 ## Article and main image
 
 - [`social/x-article.md`](social/x-article.md) — formatted long-form article
@@ -85,6 +88,7 @@ This package does not claim a completed payment.
 ```text
 SKILL.md                         Main agent instructions
 GROK_SETUP.md                    Grok project setup and verification prompt
+DEMO_EVIDENCE.md                 Redacted live demo and test evidence
 references/                      Policy, security, tools, and worked examples
 assets/                          Example policy and ledger shapes
 tests/scenarios.md               Required safety scenarios
