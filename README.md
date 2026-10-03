@@ -60,6 +60,26 @@ The skill's `references/tool-mapping.md` requires exact live tool names to be
 verified before use. A browser sign-in alone is not proof that the tools are
 available in the active conversation.
 
+## Live demo status
+
+Mermail mailbox tools and PayBox tools were verified in a Grok conversation.
+The owner-authored policy was loaded, and the renewal workflow completed a
+successful `dry_run`. The mailbox contained a Mermail welcome email, not a
+trusted-vendor invoice, so the agent correctly skipped it. No payment, draft,
+email, or mailbox update was made.
+
+No PayBox transfer has been attempted or confirmed. PayBox reported that no
+agent signer was recorded, so signing and final settlement remain unverified.
+This package does not claim a completed payment.
+
+## Article and main image
+
+- [`social/x-article.md`](social/x-article.md) — formatted long-form article
+  for X Articles.
+- [`media/x-article-main.png`](media/x-article-main.png) — 5:2 article hero.
+- [`media/x-article-main.svg`](media/x-article-main.svg) — editable vector
+  source for the hero.
+
 ## Repository contents
 
 ```text
@@ -68,6 +88,9 @@ GROK_SETUP.md                    Grok project setup and verification prompt
 references/                      Policy, security, tools, and worked examples
 assets/                          Example policy and ledger shapes
 tests/scenarios.md               Required safety scenarios
+social/x-article.md              X Article source
+media/x-article-main.png         5:2 hero artwork
+media/x-article-main.svg         Editable hero artwork
 ```
 
 ## Operating modes
